@@ -1,0 +1,8 @@
+---
+packages_lists:
+  - enablerepo:
+      - nethserver-testing
+    disablerepo:
+      - epel-testing
+    pkgs:
+      - sl

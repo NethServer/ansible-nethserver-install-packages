@@ -1,0 +1,9 @@
+---
+galaxy_info:
+  role_name: nethserver_install_packages
+  author: Matteo Valentini
+  description: Role for install lists of rpm packages, with ability of disabling or enabling repositories for each list
+  license: MIT
+  min_ansible_version: 2.7
+
+dependencies: []

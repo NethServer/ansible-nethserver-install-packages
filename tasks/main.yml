@@ -1,0 +1,9 @@
+---
+- name: Install packages
+  yum:
+    name: "{{ item.pkgs | join(',') }}"
+    enablerepo: "{{ item.enablerepo is defined | ternary(item.enablerepo, []) }}"
+    disablerepo: "{{ item.disablerepo is defined | ternary(item.disablerepo, []) }}"
+    allow_downgrade: true
+    state: latest
+  loop: "{{ packages_lists }}"
