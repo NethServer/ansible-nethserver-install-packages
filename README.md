@@ -10,7 +10,7 @@ Install a package with default repositories enabled/disabled:
 
     - hosts: servers
       roles:
-        - role: amygos.nethserver-install-packages
+        - role: amygos.nethserver_install_packages
           vars:
             packages_lists:
               - pkgs:
@@ -20,7 +20,7 @@ Install multiple packages:
 
     - hosts: servers
       roles:
-        - role: amygos.nethserver-install-packages
+        - role: amygos.nethserver_install_packages
           vars:
             packages_lists:
               - pkgs:
@@ -31,7 +31,7 @@ Install package with `epel-testing` disabled and `epel` enabled:
 
     - hosts: servers
       roles:
-        - role: amygos.nethserver-install-packages
+        - role: amygos.nethserver_install_packages
           vars:
             packages_lists:
               - enablerepo:
@@ -45,7 +45,7 @@ Install package with `epel` enabled and reinstall after with `epel-testing` enab
 
     - hosts: servers
       roles:
-        - role: amygos.nethserver-install-packages
+        - role: amygos.nethserver_install_packages
           vars:
             packages_lists:
               - enablerepo:
